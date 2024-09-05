@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function initialize() {
+        console.log('Inicializando...');
         document.documentElement.lang = currentLang;
         loadContent(currentLang);
         reattachEventListeners();
