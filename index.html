@@ -5,13 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedro Henrique Klein</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="icon/icon-aba-page.png" type="image/x-icon">
-    <link rel="shortcut icon" href="icon/icon-aba-page.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="icon/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="icon/icon-aba-page.png" type="image/png">
 </head>
 <body>
     <div id="content"></div>
-    <button id="lang-toggle" onclick="changeLanguage()"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEJ0lEQVR4nO1ZWWtTQRS+uD346PLk8idEsajU3dYZnUkxWhUEV3zSF7E2DxZFWx/0RS2p2BYUfKlkRrppUVxoRVxQapUqFmtrXdumgSo2RTlyrk1N4k3vzNw0KuTAgcBN7pzvO+ucWFZWspIVz+Kv8U+kgucQyQJUshAR/DkVPEwlG7ZV8DAR/Jn9TLLAupBvYUlJyQTrbwuTbA4V/AQVvIdKDnrK3hLJyvJCvtkZNzyvxj+TSn6OSBbVNzxRiWRRIlmQ1tIZGTGeSraFStbv1XAHIH0k5CscN8PnndszmQh+Pt2G02QgglfgWWk1ntbSqUSyxvE2nsZU8AY8M33MZ9J4OQriur/GP8UzgEyEDU2dF0Fvxod8W00P31q/Hprbl8ODl8tgW8N6D0DYJiPjueDTieC9JoeeaM6HyPslAL2LbB38sBjO3sszBdBvVGKxzpuyHjM8WU29QQQv1zIeu6Nuk0pmPZWaeIOgLbV0rjr7OB6kifV0eYNIVqZkPA5ZOKeYsh5+vRoqzwdg575qWFN4xdZd+6qgsjJgPzP2huA9ODSqsJ9jyvqtazshf7OEXF+Do+Kz2027jL1BBF/gCuDXSKwf62j80oL6lMbHFL/jBGJQxRuCH1LxgNCN9YE3BRA43gJFxx5CoPQR7D7QAgU7bsDSAmcQa7cIGOhcpZ8bgl9294B98dCrME8e3wQnGR7+Ac9ehOGS6IC9B+8mAKqqLNavVII/dfdA3KisWmHu3u+Ax2190PLgIzxq7YX2VxEIDwz9Aai75wucCrbBqo1X7cQGzUqFjVUlB6I6dR01r9A5cfn2G1Bc+hBqm7ogHImOAnn38SscOXlP6d0J3hB8SBnA0Ttrof+dGoCxKk9MV2xohLLTrdDZPWiD+Db0XendSCKSqQwgPoQK6xhcbVvhegjWfDcAMV2+oREqLrZDR+cn1/di+GIY64WQQxK7eQOblCqAmF68cFiNde0kTlFGx/IGdliVMPpdRkMQ6VypxLp+GXVpZKm8gc1JtZHdadqhzrpMmIeKXAHg0smtpafyBoLAJjUW807GN4/FeryGfPOVhjkieLfKgOXkDeyw2KR276+2yysqfq6uKv4jbCIKrMclcJfyNg9HV5WX6lQqY9ZlTFmpNZ4XGtW+ocM6/Z28Q6SOzFIGMOKFoNYhCt7QZ53H2D9j6crqGv8000t9sjeMWJejlafPeG+Ku0qTQ+MHQXPW+Ujy+vxGxo+CELzC9HCvSiQ7a3kVvIcSwWXmAbD63Fu5k6x0CC5a7YVr5pivS9tyN2nJG8xE2OSmi3knwV2laXVyCZnPnhNWc29ajg3Gs+EC38HOYNm2Mi3YHXHsUJ2dEkLF/g0r1e6w4yEjA+AC3NvgzI4XD7zZjfyBF7U/C96Kz3Akxqnyn/ibNStZsf5/+Qnxba1rX03dBwAAAABJRU5ErkJggg=="></button>
+    <div class="fab-stack">
+        <button id="theme-toggle" type="button" aria-label="Mudar para tema escuro">
+            <svg class="icon-light" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="4"></circle>
+                <path d="M12 3v2M12 19v2M5 12H3M21 12h-2M6.2 6.2l1.4 1.4M16.4 16.4l1.4 1.4M6.2 17.8l1.4-1.4M16.4 7.6l1.4-1.4"></path>
+            </svg>
+            <svg class="icon-dark" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4 7 7 0 0 0 20 14.5z"></path>
+            </svg>
+        </button>
+    </div>
+    <div class="lightbox" id="lightbox" hidden>
+        <button class="lightbox-close" type="button" aria-label="Close">&times;</button>
+        <img id="lightbox-image" alt="">
+        <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
     <script src="./js/script.js"></script>
 </body>
 </html>

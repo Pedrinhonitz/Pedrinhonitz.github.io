@@ -1,383 +1,561 @@
-<header>
-    <div class="container">
-        <h1>Pedro Henrique Klein</h1>
-        <p>Cientista da Computação - Engenheiro de Dados</p>
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="logo" href="#top">Pedro Klein</a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="site-nav" aria-label="Principal">
+            <ul>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#academic">Formação</a></li>
+                <li><a href="#experience">Experiência</a></li>
+                <li><a href="#opensource">Open Source</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#certificates">Certificados</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li>
+                    <button class="linkish download-cv" type="button" aria-label="Baixar currículo">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 4v12"></path>
+                            <path d="M7 12l5 5 5-5"></path>
+                            <path d="M5 20h14"></path>
+                        </svg>
+                        Currículo
+                    </button>
+                </li>
+                <li class="lang-switch" role="group" aria-label="Idioma">
+                    <button type="button" data-lang="pt-br" class="is-active">PT</button>
+                    <button type="button" data-lang="en">EN</button>
+                    <button type="button" data-lang="es">ES</button>
+                </li>
+            </ul>
+        </nav>
     </div>
 </header>
 
-<nav>
-    <div class="container">
-        <ul>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#academic">Acadêmico</a></li>
-            <li><a href="#experience">Experiência</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#certificates">Certificados</a></li>
-            <li><a href="#contact">Contato</a></li>
-            <li><a id="downloadButton">Baixar Currículo</a></li>
-        </ul>
-    </div>
-</nav>
-
-<section id="about">
-    <div class="container">
-        <h2>Sobre</h2>
-        <p class="about-p">Estudante de Ciência da Computação pela Universidade Federal da Fronteira Sul (UFFS) e engenheiro de dados na BIP, há três anos na área. Minha experiência profissional me proporcionou um sólido conhecimento em plataformas de computação em nuvem, como AWS e GCP, além de um entendimento aprofundado em bancos de dados e sistemas Linux.</p>
-        <p class="about-p">Minha paixão pela tecnologia é evidente em meu constante desejo de aprender e explorar novas ferramentas e metodologias. Durante minha trajetória, adquiri habilidades significativas em desenvolvimento web, o que complementa minha expertise em engenharia de dados, permitindo-me desenvolver soluções completas e eficientes.</p> 
-        <p class="about-p">Além do meu compromisso com a excelência técnica, valorizo a colaboração e a inovação, sempre buscando contribuir de maneira significativa para os projetos em que estou envolvido. Sou um entusiasta da tecnologia, sempre à procura de desafios que me permitam crescer e evoluir tanto pessoal quanto profissionalmente.</p>
-    </div>
-</section>
-
-<section id="academic">
-    <div class="container">
-        <h2>Acadêmico</h2>
-        <div class="academic-grid">
-            <div class="academic-item">
-                <h3>Universidade Federal da Fronteira Sul</h3>
-                <p><strong>Ciência da Computação</strong> (Março 2021 - Presente)</p>
-                <p class="academic-p">Durante meu curso de Ciência da Computação na Universidade Federal da Fronteira Sul (UFFS), tenho aprofundado meus conhecimentos em diversas áreas fundamentais da computação. O currículo abrangente inclui disciplinas como algoritmos, estrutura de dados, banco de dados, inteligência artificial, desenvolvimento de software, e sistemas operacionais. Essas matérias me proporcionaram uma base sólida tanto teórica quanto prática.</p>
-                <p class="academic-p">Participei de vários projetos acadêmicos que reforçaram minhas habilidades em programação, análise de dados e desenvolvimento web. Além disso, envolvi-me em atividades extracurriculares e grupos de estudo que estimularam meu interesse por tecnologias emergentes e metodologias ágeis.</p>
-                <p class="academic-p">Essa experiência acadêmica tem sido crucial para minha formação como engenheiro de dados, permitindo-me aplicar conceitos aprendidos em sala de aula diretamente em meu trabalho e em outros projetos pessoais.</p>
+<main>
+    <section class="hero" id="top">
+        <div class="container">
+            <p class="eyebrow">Engenheiro de Dados</p>
+            <h1>Pedro Henrique Klein</h1>
+            <p class="lede">Construo pipelines, modelos e orquestração em nuvem. Trabalho com Python, SQL, Airflow, DBT, AWS e GCP, da engenharia de dados ao código que a sustenta.</p>
+            <ul class="hero-meta">
+                <li>Chapecó, SC</li>
+                <li><a href="mailto:pedrohenriquekleinphg@gmail.com">pedrohenriquekleinphg@gmail.com</a></li>
+                <li><a href="tel:+5554997049008">(54) 99704-9008</a></li>
+            </ul>
+            <div class="hero-actions">
+                <button class="btn btn-primary download-cv" type="button">Baixar currículo</button>
+                <a class="btn btn-ghost" href="https://www.linkedin.com/in/pedro-henrique-klein-a41122221/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="experience">
-    <div class="container">
-        <h2>Experiência</h2>
-        <div class="experience-grid">
-            <div class="experience-item">
-                <h3>IXC-Soft</h3>
-                <p><strong>Estagiário de Desenvolvimento Web</strong> (Novembro 2021 - Dezembro 2021)</p>
-                <p class="experience-p">Durante meu estágio na IXC-Soft, trabalhei no desenvolvimento web utilizando PHP, Twig, Docker e MariaDB. Minhas principais responsabilidades incluíam:</p>
-                <ul>
-                    <li><strong>Desenvolvimento Backend:</strong> Criação e manutenção de funcionalidades em PHP, garantindo a eficiência e a segurança das aplicações web.</li>
-                    <br>
-                    <li><strong>Templates Twig:</strong> Utilização do motor de templates Twig para construir interfaces de usuário dinâmicas e amigáveis, facilitando a separação de lógica e apresentação no desenvolvimento web.</li>
-                    <br>
-                    <li><strong>Conteinerização com Docker:</strong> Implementação de ambientes de desenvolvimento isolados usando Docker, o que permitiu um fluxo de trabalho mais consistente e a fácil replicação de ambientes de produção.</li>
-                    <br>
-                    <li><strong>Gerenciamento de Banco de Dados:</strong> Administração e otimização de bancos de dados MariaDB, assegurando a integridade dos dados e a performance das consultas SQL.</li>
-                </ul>
-                <p class="experience-p">Essa experiência me proporcionou uma compreensão prática das melhores práticas de desenvolvimento web e do uso de tecnologias modernas para criar aplicações robustas e escaláveis.</p>
-            </div>
-            <div class="experience-item">
-                <h3>Descomplica</h3>
-                <p><strong>Engenheiro de Dados</strong> (Janeiro 2022 - Agosto 2024)</p>
-                <p class="experience-p">Atuando como Engenheiro de Dados na Descomplica, tenho trabalhado com uma variedade de tecnologias e ferramentas para gerenciar e otimizar grandes volumes de dados. Minhas principais responsabilidades incluem:</p>
-                <ul>
-                    <li><strong>Orquestração de Workflows:</strong> Uso do Apache Airflow para programar, monitorar e gerenciar pipelines de dados complexos, garantindo a execução eficiente e confiável dos processos.</li>
-                    <br>
-                    <li><strong>Conteinerização e Orquestração:</strong> Implementação e gestão de contêineres Docker e orquestração de clusters com Kubernetes para assegurar a escalabilidade e a consistência dos ambientes de desenvolvimento e produção.</li>
-                    <br>
-                    <li><strong>Ambientes Linux:</strong> Administração de sistemas Linux para configurar, monitorar e otimizar servidores e serviços, garantindo alta disponibilidade e segurança.</li>
-                    <br>
-                    <li><strong>Data Warehousing e Big Data:</strong> Utilização de BigQuery, Amazon Athena e Snowflake para armazenamento, processamento e análise de grandes conjuntos de dados.</li>
-                    <br>
-                    <li><strong>Análise e Visualização de Dados:</strong> Criação de dashboards e relatórios com Metabase para fornecer insights acionáveis aos stakeholders.</li>
-                    <br>
-                    <li><strong>Programação e Scripting:</strong> Desenvolvimento de scripts e automações em Python e Shell para facilitar tarefas de ETL (Extract, Transform, Load) e outras operações de dados.
-                    </li>
-                    <br>
-                    <li><strong>SQL Avançado:</strong> Escrita e otimização de consultas SQL para extrair, transformar e carregar dados de maneira eficiente.</li>
-                </ul>
-                <p class="experience-p">Minha experiência na Descomplica tem sido fundamental para aprimorar minhas habilidades em engenharia de dados, permitindo-me aplicar soluções inovadoras e eficientes para desafios complexos de dados.</p>
-            </div>
-            <div class="experience-item">
-                <h3>BIP</h3>
-                <p><strong>Engenheiro de Dados</strong> (Setembro 2024 - Presente)</p>
-                <p class="experience-p">Atualmente, atuo como Engenheiro de Dados na BIP, uma renomada empresa de consultoria. Minha função envolve o uso de tecnologias avançadas e a colaboração constante com diversas áreas e equipes para entregar soluções eficazes e inovadoras.</p>
-                <ul>
-                    <li><strong>Engenharia de Dados:</strong> Implementação e manutenção de pipelines de dados robustos utilizando Airflow e PySpark, garantindo a eficiência no processamento e transformação de grandes volumes de dados.</li>
-                    <br>
-                    <li><strong>Plataformas de Nuvem:</strong> Utilização das plataformas AWS e GCP para desenvolver e gerenciar soluções de dados escaláveis e seguras, aproveitando os recursos de computação em nuvem para otimizar o desempenho e a escalabilidade.</li>
-                    <br>
-                    <li><strong>Modelagem de Dados:</strong> Desenvolvimento e manutenção de modelos de dados com DBT e Elementary, promovendo uma abordagem eficiente para a transformação e organização de dados.</li>
-                </ul>
-                <p class="experience-p">Essa posição tem me permitido aprofundar meu conhecimento nas melhores práticas de engenharia de dados, utilizando tecnologias de ponta para construir soluções robustas e escaláveis que atendem às necessidades complexas dos nossos clientes.</p>
+    <section id="about">
+        <div class="container prose">
+            <h2 class="section-title">Sobre</h2>
+            <p>Estudei programação desde os 15 anos, primeiro com Arduino e depois com Python, por conta própria. Aos 16 entrei no mercado como desenvolvedor e, até os 18, trabalhei em backend web com Django, Node.js, PHP, JavaScript e TypeScript.</p>
+            <p>Em 2021 ingressei em Ciência da Computação na Universidade Federal da Fronteira Sul (UFFS), em Chapecó, onde sigo estudando. No início de 2022 saí do backend e fui para engenharia de dados. Desde então construo pipelines, modelo dados e orquestro processos com Python, SQL, Airflow, GCP e AWS.</p>
+            <p>Essa mistura de desenvolvimento e dados me deixa transitar entre áreas técnicas e trabalhar bem com times diferentes.</p>
+        </div>
+    </section>
+
+    <section id="academic">
+        <div class="container">
+            <h2 class="section-title">Formação acadêmica</h2>
+            <article class="academic-card">
+                <h3>Universidade Federal da Fronteira Sul (UFFS)</h3>
+                <p class="meta">2021 a 2027</p>
+                <p>Bacharelado em Ciência da Computação, campus Chapecó</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">Experiência profissional</h2>
+            <div class="timeline">
+                <article class="job">
+                    <div class="company-head">
+                        <h3>BIP Brasil, projeto Pro Carbono (Bayer)</h3>
+                        <p class="meta">Set 2024 a Ago 2026</p>
+                    </div>
+
+                    <div class="role">
+                        <h4>Engenheiro de Dados Sênior</h4>
+                        <p class="meta">Ago 2025 a Ago 2026</p>
+                        <ul>
+                            <li>Implemento e mantenho pipelines com Apache Airflow, PySpark, AWS Glue e Astronomer Cosmos.</li>
+                            <li>Crio aplicações e APIs internas com Python, FastAPI e TypeScript para automatizar processos e integrar sistemas.</li>
+                            <li>Modelo dados com DBT, com qualidade, organização e rastreabilidade das transformações.</li>
+                            <li>Administro e otimizo ambientes Linux, Docker e Kubernetes para workloads de engenharia de dados.</li>
+                            <li>Escrevo e otimizo consultas em PostgreSQL, Amazon Athena e BigQuery para grandes volumes de dados.</li>
+                            <li>Estruturo esteiras de CI/CD, reviso código e defino práticas de desenvolvimento.</li>
+                            <li>Contribuo com o Apache Airflow, com correções e melhorias para a comunidade.</li>
+                        </ul>
+                    </div>
+
+                    <div class="role">
+                        <h4>Engenheiro de Dados Pleno</h4>
+                        <p class="meta">Set 2024 a Ago 2025</p>
+                        <ul>
+                            <li>Implementei e mantive pipelines com Apache Airflow e PySpark.</li>
+                            <li>Construí soluções de processamento e armazenamento em AWS e Google Cloud Platform.</li>
+                            <li>Modelei dados com DBT e Elementary.</li>
+                            <li>Implantei CI/CD com GitHub Actions, Jenkins e Terraform, além de padrões de código e revisão de pull requests.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="job">
+                    <div class="company-head">
+                        <div>
+                            <h3>Descomplica</h3>
+                            <h4>Engenheiro de Dados Pleno</h4>
+                        </div>
+                        <p class="meta">Jan 2022 a Set 2024</p>
+                    </div>
+                    <ul>
+                        <li>Orquestro workflows no Apache Airflow para executar e monitorar pipelines de dados.</li>
+                        <li>Empacoto cargas com Docker e orquestro workloads no Kubernetes.</li>
+                        <li>Administro e otimizo ambientes Linux.</li>
+                        <li>Construo soluções de data warehouse com BigQuery, Amazon Athena e Snowflake.</li>
+                        <li>Monto dashboards e relatórios no Metabase.</li>
+                        <li>Automatizo ETL com Python e Shell.</li>
+                        <li>Escrevo e otimizo SQL para grandes volumes de dados.</li>
+                    </ul>
+                </article>
+
+                <article class="job">
+                    <div class="company-head">
+                        <div>
+                            <h3>IXC-Soft</h3>
+                            <h4>Estagiário em Engenharia de Software</h4>
+                        </div>
+                        <p class="meta">Nov 2021 a Jan 2022</p>
+                    </div>
+                    <ul>
+                        <li>Desenvolvi backend em PHP.</li>
+                        <li>Montei interfaces com Twig.</li>
+                        <li>Empacotei ambientes de desenvolvimento com Docker.</li>
+                        <li>Administrei e otimizei bancos MariaDB.</li>
+                    </ul>
+                </article>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="skills">
-    <div class="container">
-        <h2>Habilidades</h2>
-        <ul class="skills-list">
-            <li>Python</li>
-            <li>SQL</li>
-            <li>Apache Airflow</li>
-            <li>DBT</li>
-            <li>BigQuery</li>
-            <li>Snowflake</li>
-            <li>PostgreSQL</li>
-            <li>NoSQL</li>
-            <li>NewSQL</li>
-            <li>Athena</li>
-            <li>Amazon Web Services - AWS</li>
-            <li>Google Cloud Plataform - GCP</li>
-            <li>Services Serverless</li>
-            <li>Docker</li>
-            <li>Kubernetes</li>
-            <li>Shell Script</li>
-            <li>Linux</li>
-            <li>Servidores</li>
-            <li>Redes</li>
-            <li>MongoDB</li>
-            <li>Redis</li>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>JQuery</li>
-            <li>React</li>
-            <li>PHP</li>
-            <li>Twig</li>
-            <li>MariaDB</li>
-            <li>MySQL</li>
-            <li>C Language</li>
-            <li>C++</li>
-            <li>Java</li>
-            <li>Ruby</li>
-            <li>Lua</li>
-            <li>Haskell</li>
-            <li>Spark</li>
-            <li>YML/YAML</li>
-            <li>XML Language</li>
-        </ul>
-    </div>
-</section>
+    <section id="opensource">
+        <div class="container">
+            <h2 class="section-title">Open Source</h2>
+            <article class="oss-card">
+                <h3><a class="project-link" href="https://github.com/apache/airflow/pull/66431" target="_blank" rel="noopener noreferrer">Apache Airflow (Apache Software Foundation)</a></h3>
+                <p class="meta">Pull request aceito no repositório oficial</p>
+                <ul>
+                    <li>Corrigi o scheduler no tratamento de <em>deferred tasks</em>, removendo uma condição de corrida com eventos obsoletos enviados pelo executor.</li>
+                    <li>Trabalhei com os mantenedores na revisão técnica até a mudança ser aprovada e integrada ao código principal.</li>
+                </ul>
+            </article>
+        </div>
+    </section>
 
-<section id="projects">
-    <div class="container">
-        <h2>Projetos</h2>
-        <div class="projects-grid">
-            <div class="project">
-                <a class="project-link" href="https://github.com/Pedrinhonitz/dataops" target="_blank"><h3>Apache Airflow com DBT</h3></a>
-                <p class="projects-p">Desenvolvimento de um pipeline de dados orquestrado com Apache Airflow e DBT.</p>
-                <strong>Stack:</strong>
-                <ul>
-                    <li>Apache Airflow</li>
-                    <li>Data Build Tool - DBT</li>
-                    <li>Python</li>
-                    <li>Docker</li>
-                    <li>Make</li>
-                    <li>Linux</li>
-                    <li>SQL</li>
-                    <li>Jinja</li>
-                </ul>
-                <p class="projects-p">Este projeto demonstrou a eficácia da combinação de Airflow e DBT para criar pipelines de dados robustos e escaláveis, melhorando significativamente os processos de ETL e a gestão de dados.  </p>
-            </div>
-            <div class="project">
-                <a class="project-link" href="https://github.com/Pedrinhonitz/snake-game" target="_blank"><h3>Snake Game</h3></a>
-                <p class="projects-p">O Snake Game é um jogo clássico onde o jogador controla uma cobra que se move pela tela.</p>
-                <strong>Stack:</strong>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
-                <p class="projects-p">Este projeto é um ótimo exemplo de como implementar um jogo clássico utilizando tecnologias web básicas e é ideal tanto para aprendizado quanto para demonstração de conceitos de programação em jogos.</p>
-            </div>
-            <div class="project">
-                <a class="project-link" href="https://github.com/Pedrinhonitz/dbt-with-elementary" target="_blank"><h3>DBT e Elementary</h3></a>
-                <p class="projects-p">Desenvolvimento de um ambiente DBT com Elementary em um banco PostgreSQL.</p>
-                <strong>Stack:</strong>
-                <ul>
-                    <li>Data Build Tool - DBT</li>
-                    <li>Elementary</li>
-                    <li>PostgreSQL</li>
-                    <li>SQL</li>
-                    <li>Python</li>
-                    <li>Docker</li>
-                    <li>Jinja</li>
-                </ul>
-                <p class="projects-p">Este projeto busca unir todo o poder do DBT com o poder do Elementary, garantindo uma governança dos dados e gerando relatórios de cada execução.</p>
-            </div>
-            <div class="project">
-                <a class="project-link" href="https://github.com/Pedrinhonitz/flappy-bird" target="_blank"><h3>Flappy Bird</h3></a>
-                <p class="projects-p">O Flappy Bird é um jogo viciante onde o jogador controla um pássaro que deve voar entre obstáculos sem tocar neles.</p>
-                <strong>Stack:</strong>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
-                <p class="projects-p">Este projeto demonstra como criar um jogo simples e divertido usando tecnologias web básicas, oferecendo uma excelente oportunidade para aprender e praticar conceitos de programação de jogos.</p>
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Habilidades técnicas</h2>
+            <div class="skill-groups">
+                <div class="skill-group">
+                    <h3>Linguagens</h3>
+                    <ul class="chips">
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>TypeScript</li>
+                        <li>JavaScript</li>
+                        <li>Bash</li>
+                        <li>Go</li>
+                        <li>Java</li>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>Haskell</li>
+                        <li>Ruby</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Engenharia de Dados</h3>
+                    <ul class="chips">
+                        <li>Apache Airflow</li>
+                        <li>Astronomer Cosmos</li>
+                        <li>DBT</li>
+                        <li>Elementary</li>
+                        <li>PySpark</li>
+                        <li>AWS Glue</li>
+                        <li>BigQuery</li>
+                        <li>Snowflake</li>
+                        <li>Amazon Athena</li>
+                        <li>Luigi</li>
+                        <li>Dagster</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3>DevOps e infraestrutura</h3>
+                    <ul class="chips">
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                        <li>Terraform</li>
+                        <li>GitHub Actions</li>
+                        <li>Jenkins</li>
+                        <li>Linux</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Bancos de dados</h3>
+                    <ul class="chips">
+                        <li>PostgreSQL</li>
+                        <li>SQL Server</li>
+                        <li>Oracle</li>
+                        <li>Neo4j</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Cloud</h3>
+                    <ul class="chips">
+                        <li>Amazon Web Services (AWS)</li>
+                        <li>Google Cloud Platform (GCP)</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="certificates">
-    <div class="container">
-        <h2>Certificados</h2>
-        <div class="certificates-grid">
-            <div class="certificate">
-                <img src="img/primeira_maratona_programacao_sul.jpeg" alt="primeira_maratona_programacao_sul">
-            </div>
-            <div class="certificate">
-                <img src="./img/bancos-de-dados.png" alt="bancos-de-dados">
-            </div>
-            <div class="certificate">
-                <img src="./img/cloud-functions.png" alt="cloud-functions">
-            </div>
-            <div class="certificate">
-                <img src="./img/criando-bot-com-java-script.png" alt="criando-bot-com-java-script">
-            </div>
-            <div class="certificate">
-                <img src="./img/curso-c-completo.png" alt="curso-c-completo">
-            </div>
-            <div class="certificate">
-                <img src="./img/curso-cpp-completo.png" alt="curso-cpp-completo">
-            </div>
-            <div class="certificate">
-                <img src="./img/curso-rpa.png" alt="curso-rpa">
-            </div>
-            <div class="certificate">
-                <img src="./img/devops-essentials.png" alt="devops-essentials">
-            </div>
-            <div class="certificate">
-                <img src="./img/docker-completo.png" alt="docker-completo">
-            </div>
-            <div class="certificate">
-                <img src="./img/ead-com-react-e-firebase.png" alt="ead-com-react-e-firebase">
-            </div>
-            <div class="certificate">
-                <img src="./img/git-github-completo.png" alt="git-github-completo">
-            </div>
-            <div class="certificate">
-                <img src="./img/java-script-para-games.png" alt="java-script-para-games">
-            </div>
-            <div class="certificate">
-                <img src="./img/java-script-puro.png" alt="java-script-puro">
-            </div>
-            <div class="certificate">
-                <img src="./img/machine-learning.png" alt="machine-learning">
-            </div>
-            <div class="certificate">
-                <img src="./img/planejamento-de-carreira.png" alt="planejamento-de-carreira">
-            </div>
-            <div class="certificate">
-                <img src="./img/produtividade-para-programadores.png" alt="produtividade-para-programadores">
-            </div>
-            <div class="certificate">
-                <img src="./img/python-completo.png" alt="python-completo">
-            </div>
-            <div class="certificate">
-                <img src="./img/react-js.png" alt="react-js">
-            </div>
-            <div class="certificate">
-                <img src="./img/ruby-express.png" alt="ruby-express">
-            </div>
-            <div class="certificate">
-                <img src="./img/scrum.png" alt="scrum">
-            </div>
-            <div class="certificate">
-                <img src="./img/soft-skills.png" alt="soft-skills">
-            </div>
-            <div class="certificate">
-                <img src="./img/html_onebitcode.jpg" alt="html_onebitcode">
-            </div>
-            <div class="certificate">
-                <img src="./img/css_onebitcode.jpg" alt="css_onebitcode">
-            </div>
-            <div class="certificate">
-                <img src="./img/js_1_onebitcode.jpg" alt="js_1_onebitcode">
-            </div>
-            <div class="certificate">
-                <img src="./img/regex.jpg" alt="regex">
-            </div>
-            <div class="certificate">
-                <img src="./img/redes-neurais-artificiais-em-python.jpg" alt="redes-neurais-artificiais-em-python">
-            </div>
-            <div class="certificate">
-                <img src="./img/reconhecimento-facial-python.jpg" alt="reconhecimento-facial-python">
-            </div>
-            <div class="certificate">
-                <img src="./img/python-para-analise-de-dados.jpg" alt="python-para-analise-de-dados">
-            </div>
-            <div class="certificate">
-                <img src="./img/programacao-em-c-avancado.jpg" alt="programacao-em-c-avancado">
-            </div>
-            <div class="certificate">
-                <img src="./img/banco-de-dados-sql-nosql.jpg" alt="banco-de-dados-sql-nosql">
-            </div>
-            <div class="certificate">
-                <img src="./img/analise-de-dados-e-machine-learning-com-python.jpg" alt="analise-de-dados-e-machine-learning-com-python">
-            </div>
-            <div class="certificate">
-                <img src="./img/apache_airflow_extracao_dados.png" alt="apache_airflow_extracao_dados">
-            </div>
-            <div class="certificate">
-                <img src="./img/linux-onboarding-localizando-arquivos-e-conteudos.png" alt="linux-onboarding-localizando-arquivos-e-conteudos">
-            </div>
-            <div class="certificate">
-                <img src="./img/linux-onboarding-obtendo-e-tratando-informacoes-do-sistema.png" alt="linux-onboarding-obtendo-e-tratando-informacoes-do-sistema">
-            </div>
-            <div class="certificate">
-                <img src="./img/linux-onboarding-trabalhe-com-usuario-permissoes-e-dispositivos.png" alt="linux-onboarding-trabalhe-com-usuario-permissoes-e-dispositivos">
-            </div>
-            <div class="certificate">
-                <img src="./img/linux-onboarding-usando-cli.png" alt="linux-onboarding-usando-cli">
-            </div>
-            <div class="certificate">
-                <img src="./img/shell-script-monitoramento-agendamentos.png" alt="shell-script-monitoramento-agendamentos">
-            </div>
-            <div class="certificate">
-                <img src="./img/c-avancando-na-linguagem.png" alt="c-avancando-na-linguagem">
-            </div>
-            <div class="certificate">
-                <img src="./img/c-conhecendo-a-linguagem-das-linguagens.png" alt="c-conhecendo-a-linguagem-das-linguagens">
-            </div>
-            <div class="certificate">
-                <img src="./img/c-recursos-avancados-da-linguagem.png" alt="c-recursos-avancados-da-linguagem">
-            </div>
-            <div class="certificate">
-                <img src="./img/aprofundando-airflow-executor-kubernetes.png" alt="aprofundando-airflow-executor-kubernetes">
-            </div>
-            <div class="certificate">
-                <img src="./img/aprofundando-airflow-executores-local-celery.png" alt="aprofundando-airflow-executores-local-celery">
-            </div>
-            <div class="certificate">
-                <img src="./img/shell-script-automacoes.png" alt="shell-script-automacoes">
-            </div>
-            <div class="certificate">
-                <img src="./img/apache-airflow-orquestrando-pipeline-de-dados.png" alt="apache-airflow-orquestrando-pipeline-de-dados">
-            </div>
-            <div class="certificate">
-                <img src="./img/apache-airflow-transformacao-com-spark.png" alt="apache-airflow-transformacao-com-spark">
+    <section id="languages">
+        <div class="container">
+            <h2 class="section-title">Idiomas</h2>
+            <div class="languages">
+                <article class="lang-card">
+                    <h3>Português</h3>
+                    <p class="meta">Nativo</p>
+                </article>
+                <article class="lang-card">
+                    <h3>Inglês</h3>
+                    <p class="meta">A2</p>
+                </article>
+                <article class="lang-card">
+                    <h3>Espanhol</h3>
+                    <p class="meta">B1</p>
+                </article>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="contact">
-    <div class="container">
-        <h2>Contato</h2>
-        <form id="contactForm">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required>
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Projetos</h2>
+            <div class="projects-grid">
+                <article class="project">
+                    <a class="project-link" href="https://github.com/Pedrinhonitz/dataops" target="_blank" rel="noopener noreferrer"><h3>Apache Airflow com DBT</h3></a>
+                    <p>Ambiente pessoal para orquestrar transformações DBT no Airflow, do agendamento ao SQL versionado.</p>
+                    <p class="meta">Stack</p>
+                    <ul class="chips">
+                        <li>Apache Airflow</li>
+                        <li>DBT</li>
+                        <li>Python</li>
+                        <li>Docker</li>
+                        <li>Make</li>
+                        <li>SQL</li>
+                    </ul>
+                </article>
+                <article class="project">
+                    <a class="project-link" href="https://github.com/Pedrinhonitz/dbt-with-elementary" target="_blank" rel="noopener noreferrer"><h3>DBT e Elementary</h3></a>
+                    <p>Laboratório de DBT com Elementary no PostgreSQL, com testes, governança e relatório de cada execução.</p>
+                    <p class="meta">Stack</p>
+                    <ul class="chips">
+                        <li>DBT</li>
+                        <li>Elementary</li>
+                        <li>PostgreSQL</li>
+                        <li>Python</li>
+                        <li>Docker</li>
+                    </ul>
+                </article>
+                <article class="project">
+                    <a class="project-link" href="https://github.com/Pedrinhonitz/snake-game" target="_blank" rel="noopener noreferrer"><h3>Snake Game</h3></a>
+                    <p>Jogo da cobra no navegador, para praticar loop de jogo, teclado e canvas.</p>
+                    <p class="meta">Stack</p>
+                    <ul class="chips">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </article>
+                <article class="project">
+                    <a class="project-link" href="https://github.com/Pedrinhonitz/flappy-bird" target="_blank" rel="noopener noreferrer"><h3>Flappy Bird</h3></a>
+                    <p>Recriação do Flappy Bird no navegador, com ênfase em timing, física simples e colisões.</p>
+                    <p class="meta">Stack</p>
+                    <ul class="chips">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+    <section id="certificates">
+        <div class="container">
+            <h2 class="section-title">Certificados</h2>
+            <div class="certs-grid">
+                <button class="cert-card" type="button" data-src="certificates/claude_101.png" data-title="Claude 101">
+                    <img src="certificates/claude_101.png" alt="Claude 101" loading="lazy">
+                    <span>Claude 101</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/claude_code_101.png" data-title="Claude Code 101">
+                    <img src="certificates/claude_code_101.png" alt="Claude Code 101" loading="lazy">
+                    <span>Claude Code 101</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/claude_code_in_action.png" data-title="Claude Code in Action">
+                    <img src="certificates/claude_code_in_action.png" alt="Claude Code in Action" loading="lazy">
+                    <span>Claude Code in Action</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/claude_platform_101.png" data-title="Claude Platform 101">
+                    <img src="certificates/claude_platform_101.png" alt="Claude Platform 101" loading="lazy">
+                    <span>Claude Platform 101</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/claude_with_the_anthropic-api.png" data-title="Claude with the Anthropic API">
+                    <img src="certificates/claude_with_the_anthropic-api.png" alt="Claude with the Anthropic API" loading="lazy">
+                    <span>Anthropic API</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/introduction_to_model_context_protocol.png" data-title="Introduction to Model Context Protocol">
+                    <img src="certificates/introduction_to_model_context_protocol.png" alt="Introduction to Model Context Protocol" loading="lazy">
+                    <span>Model Context Protocol</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/introduction_to_claude_cowork.png" data-title="Introduction to Claude Cowork">
+                    <img src="certificates/introduction_to_claude_cowork.png" alt="Introduction to Claude Cowork" loading="lazy">
+                    <span>Claude Cowork</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/ia_fluency.png" data-title="IA Fluency">
+                    <img src="certificates/ia_fluency.png" alt="IA Fluency" loading="lazy">
+                    <span>IA Fluency</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/ia_fluency_for_students.png" data-title="IA Fluency for Students">
+                    <img src="certificates/ia_fluency_for_students.png" alt="IA Fluency for Students" loading="lazy">
+                    <span>IA Fluency Students</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/ia_fluency_for_educators.png" data-title="IA Fluency for Educators">
+                    <img src="certificates/ia_fluency_for_educators.png" alt="IA Fluency for Educators" loading="lazy">
+                    <span>IA Fluency Educators</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/primeira_maratona_programacao_sul.jpeg" data-title="Primeira Maratona de Programação Sul">
+                    <img src="certificates/primeira_maratona_programacao_sul.jpeg" alt="Primeira Maratona de Programação Sul" loading="lazy">
+                    <span>Maratona de Programação Sul</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/apache-airflow-orquestrando-pipeline-de-dados.png" data-title="Apache Airflow: orquestrando pipeline de dados">
+                    <img src="certificates/apache-airflow-orquestrando-pipeline-de-dados.png" alt="Apache Airflow: orquestrando pipeline de dados" loading="lazy">
+                    <span>Airflow: pipelines</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/apache-airflow-transformacao-com-spark.png" data-title="Apache Airflow: transformação com Spark">
+                    <img src="certificates/apache-airflow-transformacao-com-spark.png" alt="Apache Airflow: transformação com Spark" loading="lazy">
+                    <span>Airflow + Spark</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/apache_airflow_extracao_dados.png" data-title="Apache Airflow: extração de dados">
+                    <img src="certificates/apache_airflow_extracao_dados.png" alt="Apache Airflow: extração de dados" loading="lazy">
+                    <span>Airflow: extração</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/aprofundando-airflow-executor-kubernetes.png" data-title="Airflow: executor Kubernetes">
+                    <img src="certificates/aprofundando-airflow-executor-kubernetes.png" alt="Airflow: executor Kubernetes" loading="lazy">
+                    <span>Airflow Kubernetes</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/aprofundando-airflow-executores-local-celery.png" data-title="Airflow: executores Local e Celery">
+                    <img src="certificates/aprofundando-airflow-executores-local-celery.png" alt="Airflow: executores Local e Celery" loading="lazy">
+                    <span>Airflow Celery</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/docker-completo.png" data-title="Docker completo">
+                    <img src="certificates/docker-completo.png" alt="Docker completo" loading="lazy">
+                    <span>Docker</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/devops-essentials.png" data-title="DevOps Essentials">
+                    <img src="certificates/devops-essentials.png" alt="DevOps Essentials" loading="lazy">
+                    <span>DevOps Essentials</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/cloud-functions.png" data-title="Cloud Functions">
+                    <img src="certificates/cloud-functions.png" alt="Cloud Functions" loading="lazy">
+                    <span>Cloud Functions</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/python-completo.png" data-title="Python completo">
+                    <img src="certificates/python-completo.png" alt="Python completo" loading="lazy">
+                    <span>Python</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/python-para-analise-de-dados.jpg" data-title="Python para análise de dados">
+                    <img src="certificates/python-para-analise-de-dados.jpg" alt="Python para análise de dados" loading="lazy">
+                    <span>Python para dados</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/analise-de-dados-e-machine-learning-com-python.jpg" data-title="Análise de dados e machine learning com Python">
+                    <img src="certificates/analise-de-dados-e-machine-learning-com-python.jpg" alt="Análise de dados e machine learning com Python" loading="lazy">
+                    <span>ML com Python</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/machine-learning.png" data-title="Machine Learning">
+                    <img src="certificates/machine-learning.png" alt="Machine Learning" loading="lazy">
+                    <span>Machine Learning</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/redes-neurais-artificiais-em-python.jpg" data-title="Redes neurais artificiais em Python">
+                    <img src="certificates/redes-neurais-artificiais-em-python.jpg" alt="Redes neurais artificiais em Python" loading="lazy">
+                    <span>Redes neurais</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/reconhecimento-facial-python.jpg" data-title="Reconhecimento facial com Python">
+                    <img src="certificates/reconhecimento-facial-python.jpg" alt="Reconhecimento facial com Python" loading="lazy">
+                    <span>Reconhecimento facial</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/bancos-de-dados.png" data-title="Bancos de dados">
+                    <img src="certificates/bancos-de-dados.png" alt="Bancos de dados" loading="lazy">
+                    <span>Bancos de dados</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/banco-de-dados-sql-nosql.jpg" data-title="Banco de dados SQL e NoSQL">
+                    <img src="certificates/banco-de-dados-sql-nosql.jpg" alt="Banco de dados SQL e NoSQL" loading="lazy">
+                    <span>SQL e NoSQL</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/linux-onboarding-usando-cli.png" data-title="Linux: usando a CLI">
+                    <img src="certificates/linux-onboarding-usando-cli.png" alt="Linux: usando a CLI" loading="lazy">
+                    <span>Linux CLI</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/linux-onboarding-localizando-arquivos-e-conteudos.png" data-title="Linux: localizando arquivos e conteúdos">
+                    <img src="certificates/linux-onboarding-localizando-arquivos-e-conteudos.png" alt="Linux: localizando arquivos e conteúdos" loading="lazy">
+                    <span>Linux: arquivos</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/linux-onboarding-obtendo-e-tratando-informacoes-do-sistema.png" data-title="Linux: informações do sistema">
+                    <img src="certificates/linux-onboarding-obtendo-e-tratando-informacoes-do-sistema.png" alt="Linux: informações do sistema" loading="lazy">
+                    <span>Linux: sistema</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/linux-onboarding-trabalhe-com-usuario-permissoes-e-dispositivos.png" data-title="Linux: usuários, permissões e dispositivos">
+                    <img src="certificates/linux-onboarding-trabalhe-com-usuario-permissoes-e-dispositivos.png" alt="Linux: usuários, permissões e dispositivos" loading="lazy">
+                    <span>Linux: permissões</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/shell-script-automacoes.png" data-title="Shell Script: automações">
+                    <img src="certificates/shell-script-automacoes.png" alt="Shell Script: automações" loading="lazy">
+                    <span>Shell: automações</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/shell-script-monitoramento-agendamentos.png" data-title="Shell Script: monitoramento e agendamentos">
+                    <img src="certificates/shell-script-monitoramento-agendamentos.png" alt="Shell Script: monitoramento e agendamentos" loading="lazy">
+                    <span>Shell: monitoramento</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/git-github-completo.png" data-title="Git e GitHub completo">
+                    <img src="certificates/git-github-completo.png" alt="Git e GitHub completo" loading="lazy">
+                    <span>Git e GitHub</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/html_onebitcode.jpg" data-title="HTML">
+                    <img src="certificates/html_onebitcode.jpg" alt="HTML" loading="lazy">
+                    <span>HTML</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/css_onebitcode.jpg" data-title="CSS">
+                    <img src="certificates/css_onebitcode.jpg" alt="CSS" loading="lazy">
+                    <span>CSS</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/js_1_onebitcode.jpg" data-title="JavaScript">
+                    <img src="certificates/js_1_onebitcode.jpg" alt="JavaScript" loading="lazy">
+                    <span>JavaScript</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/java-script-puro.png" data-title="JavaScript puro">
+                    <img src="certificates/java-script-puro.png" alt="JavaScript puro" loading="lazy">
+                    <span>JavaScript puro</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/java-script-para-games.png" data-title="JavaScript para games">
+                    <img src="certificates/java-script-para-games.png" alt="JavaScript para games" loading="lazy">
+                    <span>JS para games</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/react-js.png" data-title="React JS">
+                    <img src="certificates/react-js.png" alt="React JS" loading="lazy">
+                    <span>React JS</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/ead-com-react-e-firebase.png" data-title="EAD com React e Firebase">
+                    <img src="certificates/ead-com-react-e-firebase.png" alt="EAD com React e Firebase" loading="lazy">
+                    <span>React e Firebase</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/criando-bot-com-java-script.png" data-title="Criando bot com JavaScript">
+                    <img src="certificates/criando-bot-com-java-script.png" alt="Criando bot com JavaScript" loading="lazy">
+                    <span>Bot com JavaScript</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/curso-c-completo.png" data-title="C completo">
+                    <img src="certificates/curso-c-completo.png" alt="C completo" loading="lazy">
+                    <span>C completo</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/c-conhecendo-a-linguagem-das-linguagens.png" data-title="C: conhecendo a linguagem">
+                    <img src="certificates/c-conhecendo-a-linguagem-das-linguagens.png" alt="C: conhecendo a linguagem" loading="lazy">
+                    <span>C: fundamentos</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/c-avancando-na-linguagem.png" data-title="C: avançando na linguagem">
+                    <img src="certificates/c-avancando-na-linguagem.png" alt="C: avançando na linguagem" loading="lazy">
+                    <span>C: avançado</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/c-recursos-avancados-da-linguagem.png" data-title="C: recursos avançados">
+                    <img src="certificates/c-recursos-avancados-da-linguagem.png" alt="C: recursos avançados" loading="lazy">
+                    <span>C: recursos</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/programacao-em-c-avancado.jpg" data-title="Programação em C avançado">
+                    <img src="certificates/programacao-em-c-avancado.jpg" alt="Programação em C avançado" loading="lazy">
+                    <span>C avançado</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/curso-cpp-completo.png" data-title="C++ completo">
+                    <img src="certificates/curso-cpp-completo.png" alt="C++ completo" loading="lazy">
+                    <span>C++</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/ruby-express.png" data-title="Ruby Express">
+                    <img src="certificates/ruby-express.png" alt="Ruby Express" loading="lazy">
+                    <span>Ruby Express</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/regex.jpg" data-title="Regex">
+                    <img src="certificates/regex.jpg" alt="Regex" loading="lazy">
+                    <span>Regex</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/curso-rpa.png" data-title="RPA">
+                    <img src="certificates/curso-rpa.png" alt="RPA" loading="lazy">
+                    <span>RPA</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/scrum.png" data-title="Scrum">
+                    <img src="certificates/scrum.png" alt="Scrum" loading="lazy">
+                    <span>Scrum</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/soft-skills.png" data-title="Soft Skills">
+                    <img src="certificates/soft-skills.png" alt="Soft Skills" loading="lazy">
+                    <span>Soft Skills</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/planejamento-de-carreira.png" data-title="Planejamento de carreira">
+                    <img src="certificates/planejamento-de-carreira.png" alt="Planejamento de carreira" loading="lazy">
+                    <span>Carreira</span>
+                </button>
+                <button class="cert-card" type="button" data-src="certificates/produtividade-para-programadores.png" data-title="Produtividade para programadores">
+                    <img src="certificates/produtividade-para-programadores.png" alt="Produtividade para programadores" loading="lazy">
+                    <span>Produtividade</span>
+                </button>
+            </div>
+        </div>
+    </section>
 
-            <label for="message">Mensagem:</label>
-            <textarea id="message" name="message" required></textarea>
+    <section id="contact">
+        <div class="container contact-panel">
+            <div>
+                <h2 class="section-title">Contato</h2>
+                <p>Fale comigo por e-mail, telefone ou LinkedIn.</p>
+            </div>
+            <ul class="contact-list">
+                <li><a href="mailto:pedrohenriquekleinphg@gmail.com">pedrohenriquekleinphg@gmail.com</a></li>
+                <li><a href="tel:+5554997049008">(54) 99704-9008</a></li>
+                <li><a href="https://www.linkedin.com/in/pedro-henrique-klein-a41122221/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="https://github.com/Pedrinhonitz" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li>Chapecó, SC</li>
+            </ul>
+        </div>
+    </section>
+</main>
 
-            <button type="submit">Enviar</button>
-        </form>
-        <p id="confirmationMessage" style="display: none;">Mensagem enviada com sucesso!</p>
-    </div>
-</section>
-
-<footer>
-    <div class="container">
-        <p>&copy; 2024 Pedro Henrique Klein. Todos os direitos reservados.</p>
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <p>© 2026 Pedro Henrique Klein. Todos os direitos reservados.</p>
         <div class="social-icons">
-            <a href="https://www.linkedin.com/in/pedro-henrique-klein-a41122221/" target="_blank"><img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxwYXRoIGZpbGw9IiMwMDc4ZDQiIGQ9Ik00MiwzN2MwLDIuNzYyLTIuMjM4LDUtNSw1SDExYy0yLjc2MSwwLTUtMi4yMzgtNS01VjExYzAtMi43NjIsMi4yMzktNSw1LTVoMjZjMi43NjIsMCw1LDIuMjM4LDUsNQlWMzd6Ij48L3BhdGg+PHBhdGggZD0iTTMwLDM3VjI2LjkwMWMwLTEuNjg5LTAuODE5LTIuNjk4LTIuMTkyLTIuNjk4Yy0wLjgxNSwwLTEuNDE0LDAuNDU5LTEuNzc5LDEuMzY0CWMtMC4wMTcsMC4wNjQtMC4wNDEsMC4zMjUtMC4wMzEsMS4xMTRMMjYsMzdoLTdWMThoN3YxLjA2MUMyNy4wMjIsMTguMzU2LDI4LjI3NSwxOCwyOS43MzgsMThjNC41NDcsMCw3LjI2MSwzLjA5Myw3LjI2MSw4LjI3NAlMMzcsMzdIMzB6IE0xMSwzN1YxOGgzLjQ1N0MxMi40NTQsMTgsMTEsMTYuNTI4LDExLDE0LjQ5OUMxMSwxMi40NzIsMTIuNDc4LDExLDE0LjUxNCwxMWMyLjAxMiwwLDMuNDQ1LDEuNDMxLDMuNDg2LDMuNDc5CUMxOCwxNi41MjMsMTYuNTIxLDE4LDE0LjQ4NSwxOEgxOHYxOUgxMXoiIG9wYWNpdHk9Ii4wNSI+PC9wYXRoPjxwYXRoIGQ9Ik0zMC41LDM2LjV2LTkuNTk5YzAtMS45NzMtMS4wMzEtMy4xOTgtMi42OTItMy4xOThjLTEuMjk1LDAtMS45MzUsMC45MTItMi4yNDMsMS42NzcJYy0wLjA4MiwwLjE5OS0wLjA3MSwwLjk4OS0wLjA2NywxLjMyNkwyNS41LDM2LjVoLTZ2LTE4aDZ2MS42MzhjMC43OTUtMC44MjMsMi4wNzUtMS42MzgsNC4yMzgtMS42MzgJYzQuMjMzLDAsNi43NjEsMi45MDYsNi43NjEsNy43NzRMMzYuNSwzNi41SDMwLjV6IE0xMS41LDM2LjV2LTE4aDZ2MThIMTEuNXogTTE0LjQ1NywxNy41Yy0xLjcxMywwLTIuOTU3LTEuMjYyLTIuOTU3LTMuMDAxCWMwLTEuNzM4LDEuMjY4LTIuOTk5LDMuMDE0LTIuOTk5YzEuNzI0LDAsMi45NTEsMS4yMjksMi45ODYsMi45ODljMCwxLjc0OS0xLjI2OCwzLjAxMS0zLjAxNSwzLjAxMUgxNC40NTd6IiBvcGFjaXR5PSIuMDciPjwvcGF0aD48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTIsMTloNXYxN2gtNVYxOXogTTE0LjQ4NSwxN2gtMC4wMjhDMTIuOTY1LDE3LDEyLDE1Ljg4OCwxMiwxNC40OTlDMTIsMTMuMDgsMTIuOTk1LDEyLDE0LjUxNCwxMgljMS41MjEsMCwyLjQ1OCwxLjA4LDIuNDg2LDIuNDk5QzE3LDE1Ljg4NywxNi4wMzUsMTcsMTQuNDg1LDE3eiBNMzYsMzZoLTV2LTkuMDk5YzAtMi4xOTgtMS4yMjUtMy42OTgtMy4xOTItMy42OTgJYy0xLjUwMSwwLTIuMzEzLDEuMDEyLTIuNzA3LDEuOTlDMjQuOTU3LDI1LjU0MywyNSwyNi41MTEsMjUsMjd2OWgtNVYxOWg1djIuNjE2QzI1LjcyMSwyMC41LDI2Ljg1LDE5LDI5LjczOCwxOQljMy41NzgsMCw2LjI2MSwyLjI1LDYuMjYxLDcuMjc0TDM2LDM2TDM2LDM2eiI+PC9wYXRoPgo8L3N2Zz4="/></a>
-            <a href="https://github.com/Pedrinhonitz" target="_blank"><img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCI+CiAgICA8cGF0aCBkPSJNMTcuNzkxLDQ2LjgzNkMxOC41MDIsNDYuNTMsMTksNDUuODIzLDE5LDQ1di01LjRjMC0wLjE5NywwLjAxNi0wLjQwMiwwLjA0MS0wLjYxQzE5LjAyNywzOC45OTQsMTkuMDE0LDM4Ljk5NywxOSwzOSBjMCwwLTMsMC0zLjYsMGMtMS41LDAtMi44LTAuNi0zLjQtMS44Yy0wLjctMS4zLTEtMy41LTIuOC00LjdDOC45LDMyLjMsOS4xLDMyLDkuNywzMmMwLjYsMC4xLDEuOSwwLjksMi43LDJjMC45LDEuMSwxLjgsMiwzLjQsMiBjMi40ODcsMCwzLjgyLTAuMTI1LDQuNjIyLTAuNTU1QzIxLjM1NiwzNC4wNTYsMjIuNjQ5LDMzLDI0LDMzdi0wLjAyNWMtNS42NjgtMC4xODItOS4yODktMi4wNjYtMTAuOTc1LTQuOTc1IGMtMy42NjUsMC4wNDItNi44NTYsMC40MDUtOC42NzcsMC43MDdjLTAuMDU4LTAuMzI3LTAuMTA4LTAuNjU2LTAuMTUxLTAuOTg3YzEuNzk3LTAuMjk2LDQuODQzLTAuNjQ3LDguMzQ1LTAuNzE0IGMtMC4xMTItMC4yNzYtMC4yMDktMC41NTktMC4yOTEtMC44NDljLTMuNTExLTAuMTc4LTYuNTQxLTAuMDM5LTguMTg3LDAuMDk3Yy0wLjAyLTAuMzMyLTAuMDQ3LTAuNjYzLTAuMDUxLTAuOTk5IGMxLjY0OS0wLjEzNSw0LjU5Ny0wLjI3LDguMDE4LTAuMTExYy0wLjA3OS0wLjUtMC4xMy0xLjAxMS0wLjEzLTEuNTQzYzAtMS43LDAuNi0zLjUsMS43LTVjLTAuNS0xLjctMS4yLTUuMywwLjItNi42IGMyLjcsMCw0LjYsMS4zLDUuNSwyLjFDMjEsMTMuNCwyMi45LDEzLDI1LDEzczQsMC40LDUuNiwxLjFjMC45LTAuOCwyLjgtMi4xLDUuNS0yLjFjMS41LDEuNCwwLjcsNSwwLjIsNi42YzEuMSwxLjUsMS43LDMuMiwxLjYsNSBjMCwwLjQ4NC0wLjA0NSwwLjk1MS0wLjExLDEuNDA5YzMuNDk5LTAuMTcyLDYuNTI3LTAuMDM0LDguMjA0LDAuMTAyYy0wLjAwMiwwLjMzNy0wLjAzMywwLjY2Ni0wLjA1MSwwLjk5OSBjLTEuNjcxLTAuMTM4LTQuNzc1LTAuMjgtOC4zNTktMC4wODljLTAuMDg5LDAuMzM2LTAuMTk3LDAuNjYzLTAuMzI1LDAuOThjMy41NDYsMC4wNDYsNi42NjUsMC4zODksOC41NDgsMC42ODkgYy0wLjA0MywwLjMzMi0wLjA5MywwLjY2MS0wLjE1MSwwLjk4N2MtMS45MTItMC4zMDYtNS4xNzEtMC42NjQtOC44NzktMC42ODJDMzUuMTEyLDMwLjg3MywzMS41NTcsMzIuNzUsMjYsMzIuOTY5VjMzIGMyLjYsMCw1LDMuOSw1LDYuNlY0NWMwLDAuODIzLDAuNDk4LDEuNTMsMS4yMDksMS44MzZDNDEuMzcsNDMuODA0LDQ4LDM1LjE2NCw0OCwyNUM0OCwxMi4zMTgsMzcuNjgzLDIsMjUsMlMyLDEyLjMxOCwyLDI1IEMyLDM1LjE2NCw4LjYzLDQzLjgwNCwxNy43OTEsNDYuODM2eiI+PC9wYXRoPgo8L3N2Zz4="/></a>
+            <a href="https://www.linkedin.com/in/pedro-henrique-klein-a41122221/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V24h-4V8.5zM8.5 8.5h3.8v2.1h.05c.53-1 1.84-2.1 3.79-2.1 4.05 0 4.8 2.67 4.8 6.14V24h-4v-7.7c0-1.84-.03-4.2-2.56-4.2-2.56 0-2.95 2-2.95 4.06V24h-4V8.5z"/></svg>
+            </a>
+            <a href="https://github.com/Pedrinhonitz" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.79 8.21 11.37.6.11.82-.26.82-.58 0-.29-.01-1.05-.02-2.06-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.62-2.81 5.64-5.49 5.94.43.37.81 1.1.81 2.22 0 1.6-.01 2.89-.01 3.28 0 .32.22.7.83.58C20.56 22.29 24 17.8 24 12.5 24 5.87 18.63.5 12 .5z"/></svg>
+            </a>
         </div>
     </div>
 </footer>
